@@ -203,10 +203,11 @@
 </a>
 
 <style>
+/* 點單系統按鈕 */
 .floating-order-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 20px;       /* 底部 20px */
+    right: 20px;        /* 右邊 20px */
     background-color: #e74c3c;
     color: white;
     padding: 12px 18px;
@@ -236,13 +237,13 @@
     75%  { transform: rotate(2deg); }
     100% { transform: rotate(0deg); }
 }
-</style>
-<style>
-  #sponsor-btn {
+
+/* 友情贊助按鈕 */
+#sponsor-btn {
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;       /* 把它往上推，避免重疊 */
     right: 20px;
-    background: #e74c3c;
+    background: #3498db;
     color: white;
     border: none;
     border-radius: 25px;
@@ -252,12 +253,19 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     z-index: 9999;
     transition: background 0.3s;
-  }
-  #sponsor-btn:hover {
-    background: #c0392b;
-  }
+    font-family: 'Microsoft JhengHei', Arial, sans-serif;
+    user-select: none;
+}
+
+#sponsor-btn:hover {
+    background: #2980b9;
+}
 </style>
 
+<!-- 點單系統按鈕 -->
+<button class="floating-order-btn" onclick="window.location.href='https://kingki3365.github.io/-DM/'">點單系統</button>
+
+<!-- 友情贊助按鈕 -->
 <button id="sponsor-btn">友情贊助</button>
 
 <script>
