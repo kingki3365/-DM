@@ -237,5 +237,33 @@
     100% { transform: rotate(0deg); }
 }
 </style>
+<style>
+  #sponsor-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: background 0.3s;
+  }
+  #sponsor-btn:hover {
+    background: #c0392b;
+  }
+</style>
+
+<button id="sponsor-btn">友情贊助</button>
+
+<script>
+  document.getElementById('sponsor-btn').addEventListener('click', () => {
+    alert('啊....我忘了我沒有朋友，所以按了也沒用 😭');
+  });
+</script>
 </body>
 </html>
